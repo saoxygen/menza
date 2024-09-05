@@ -100,6 +100,43 @@
         z-index: 1;
     }
 
+    #work_done {
+        height: auto;
+    }
+
+    #projects {
+        height: 160vh;
+    }
+
+    #project_logos {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 90px;
+        row-gap: 40px;
+        place-items: center;
+        width: 100%;
+    }
+
+    .item6 {
+        grid-column: 1 / 4;
+    }
+
+    .item13 {
+        grid-column: 1 / 4;
+    }
+
+    .item16 {
+        grid-column: 1 / 2;
+    }
+
+    .item17 {
+        grid-column: 2 / 3;
+    }
+
+    .item18 {
+        grid-column: 3 / 4;
+    }
+
     #who {
         grid-template-columns: 100%;
     }
