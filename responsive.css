@@ -1,0 +1,252 @@
+@media only screen and (max-width: 912px) {
+
+    #nav2_ul {
+        display: none;
+    }
+
+    #nav_mobile ul {
+        flex-direction: column;
+    }
+
+    #nav_mobile li,
+    #nav_mobile .dropbtn {
+        font-size: 26px;
+    }
+
+    #nav_mobile {
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.90);
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #cta_btn {
+        font-size: 30px;
+        padding: 20px 40px;
+        border-radius: 50px;
+    }
+
+    #project_logos {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 90px;
+        row-gap: 40px;
+        place-items: center;
+        width: 100%;
+    }
+
+    .item16 {
+        grid-column: 1 / 2;
+    }
+
+    .item17 {
+        grid-column: 2 / 3;
+    }
+
+    .item18 {
+        grid-column: 3 / 4;
+    }
+
+    #list_of_services {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        width: 90%;
+        gap: 20px;
+    }
+
+    #list_of_services .service {
+        font-size: 26px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #full_service .special_light {
+        text-align: center;
+    }
+
+    #full_service {
+        width: 90%;
+    }
+
+    #full_service .service {
+        width: 100%;
+    }
+
+    #full_service .text {
+        font-size: 32px;
+    }
+
+    #full_service h3 {
+        font-size: 42px;
+    }
+
+    #services {
+        height: auto;
+    }
+
+    #cross {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+    }
+
+    #who {
+        grid-template-columns: 100%;
+    }
+
+    #who img {}
+
+
+    #who_text {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.95);
+        grid-template-columns: 98%;
+        place-items: center;
+        padding: 20px 20px;
+    }
+
+    .who_text,
+    #who_header {
+        text-align: center;
+        width: 90%;
+    }
+
+    .who_text {
+        font-size: 26px;
+    }
+
+    #team_body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #team {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #team .carousel {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .thumb {
+        grid-template-columns: 100px;
+    }
+
+    .img-box img {
+        transform: translate(-10%, -60%);
+    }
+
+    .item .info-box {
+        position: absolute;
+        left: 5%;
+        transform: translateY(100%);
+    }
+
+    #back i {
+        font-size: 36px;
+    }
+/* 
+    .info-item {
+        width: 70vw;
+    }
+    .info-item p {
+        font-size: 26px;
+    } */
+
+    /* .item {
+        width: 100%;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+    .info-item {
+        width: 100%;
+    } */
+}
+
+@media only screen and (max-width: 430px) {
+
+    #work_done {
+        height: auto;
+    }
+
+    #projects {
+        height: 160vh;
+    }
+
+    #partners {
+        width: 95%;
+    }
+
+    #nav_mobile li,
+    #nav_mobile .dropbtn {
+        font-size: 26px;
+    }
+
+    #cta_btn {
+        font-size: 20px;
+    }
+
+    #project_logos {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 90px;
+        row-gap: 40px;
+        place-items: center;
+        width: 100%;
+    }
+
+    .item6 {
+        grid-column: 1 / 4;
+    }
+
+    .item13 {
+        grid-column: 1 / 4;
+    }
+
+    .item16 {
+        grid-column: 1 / 2;
+    }
+
+    .item17 {
+        grid-column: 2 / 3;
+    }
+
+    .item18 {
+        grid-column: 3 / 4;
+    }
+
+    #list_of_services {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        width: 90%;
+        gap: 20px;
+    }
+
+    #list_of_services .service {
+        font-size: 20px;
+    }
+
+    #full_service {
+        width: 90%;
+    }
+
+    #full_service .text {
+        font-size: 22px;
+    }
+
+    #full_service h3 {
+        font-size: 32px;
+    }
+
+}
