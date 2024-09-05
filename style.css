@@ -82,7 +82,7 @@ i {
     height: 100%;
     filter: brightness(60%);
     filter: grayscale(100%);
-    background: linear-gradient(to right, #000, #000000a8, #fff), url('/images/stadium.jpg');
+    background: linear-gradient(to right, #000, #000000a8, #fff), url('images/stadium.jpg');
     background-size: cover;
     background-blend-mode: multiply;
     overflow: hidden;
