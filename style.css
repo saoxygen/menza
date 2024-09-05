@@ -494,6 +494,15 @@ nav a {
 
 .service a {
     text-decoration: none;
+  color: inherit;
+}
+
+.special_light {
+    text-align: center;
+}
+
+#menu {
+    display: none;
 }
 
 .hideDivs {
