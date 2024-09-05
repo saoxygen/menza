@@ -19,7 +19,7 @@ h2 {
 
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('/font/ghostink.regular.ttf') format('truetype');
+    src: url('font/ghostink.regular.ttf') format('truetype');
 }
 
 .special {
