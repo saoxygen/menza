@@ -80,11 +80,11 @@
     }
 
     #full_service .text {
-        font-size: 32px;
+        font-size: 22px;
     }
 
     #full_service h3 {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     #services {
@@ -139,6 +139,11 @@
 
     #who {
         grid-template-columns: 100%;
+        overflow-y: scroll;
+    }
+
+    #who .img {
+        z-index: -1;
     }
 
     #who img {}
@@ -150,6 +155,9 @@
         grid-template-columns: 98%;
         place-items: center;
         padding: 20px 20px;
+        z-index: 1;
+        overflow-y: scroll;
+        top: 0px;
     }
 
     .who_text,
@@ -170,31 +178,72 @@
     #team {
         height: 100vh;
         overflow: hidden;
+        padding: 0px;
     }
 
     #team .carousel {
         height: 100vh;
         overflow: hidden;
+        overflow-x: scroll;
+        background: linear-gradient(to top, #000, transparent);
     }
 
     .thumb {
-        grid-template-columns: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(40vh);
+        overflow-x: scroll;
+        width: fit-content;
+        position: inherit;
     }
 
+    #team .item .img-box img {
+        transform: translate(0%, -190%);
+        height: 30%;
+    }
+    
+    /* #team .item .info-box {
+        overflow: visible;
+    } */
+    
     .img-box img {
-        transform: translate(-10%, -60%);
+        transform: translate(0%, -190%);
+        height: 30%;
     }
 
     .item .info-box {
         position: absolute;
-        left: 5%;
-        transform: translateY(100%);
+        left: 0%;
+        transform: translateY(50%);
+        width: 100%;
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #back i {
         font-size: 36px;
     }
-/* 
+
+    .info-item {
+        padding: 0px 20px;
+        transform: translateY(-12vh);
+    }
+    
+    .info-slider .info-item {
+        width: 100%;
+        transform: translateY(calc(var(--i)* 100%));
+    }
+
+    #projects {
+        height: 110vh;
+    }
+
+    /* 
     .info-item {
         width: 70vw;
     }
@@ -214,7 +263,7 @@
     } */
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 431px) {
 
     #work_done {
         height: auto;
@@ -290,4 +339,47 @@
         font-size: 32px;
     }
 
+    #team .special {
+        font-size: 46px;
+    }
+
+    #team h2 {
+        font-size: 26px;
+    }
+
+    #hero_content {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    #CTA {
+        font-size: 16px;
+    }
+
+    #CTA .important {
+        font-size: 46px;
+    }
+
+    #projects {
+        height: 200vh;
+    }
+
+    #full_service .service {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 20px 0px;
+    }
+
+    .item .info-box {
+        transform: translateY(10vh);
+    }
+
+    .thumb {
+        transform: translateY(35vh);
+    }
+
+    .thumb img {
+        width: 80px;
+        height: 80px;
+    }
 }
