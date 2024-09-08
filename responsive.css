@@ -18,7 +18,7 @@
     }
 
     #nav_mobile {
-        height: 100vh;
+        height: calc(100vh + env(safe-area-inset-bottom));
         background-color: rgba(0, 0, 0, 0.90);
     }
 
@@ -171,12 +171,12 @@
     }
 
     #team_body {
-        height: 100vh;
+        height: calc(100vh + env(safe-area-inset-bottom));
         overflow: hidden;
     }
 
     #team {
-        height: 100vh;
+        height: calc(100vh + env(safe-area-inset-bottom));
         overflow: hidden;
         padding: 0px;
         padding-top: 20px;
@@ -188,7 +188,7 @@
     }
 
     #team .carousel {
-        height: 100vh;
+        height: calc(100vh + env(safe-area-inset-bottom));
         overflow: hidden;
         overflow-x: scroll;
         background: linear-gradient(to top, #000, transparent);
