@@ -111,7 +111,8 @@ i {
     color: #000;
 }
 
-#nav2, #nav_mobile {
+#nav2,
+#nav_mobile {
     position: sticky;
     top: 0;
     background-color: #000;
@@ -280,13 +281,33 @@ ul {
     border-radius: 20px;
     bottom: -115.5px;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.153), 2px 2px 2px rgba(0, 0, 0, 0.301);
+    height: 15rem;
 }
 
 .carousel {
     width: 100%;
     justify-content: space-around;
     gap: 40px;
+    position: relative;
     animation: scroll 15s linear infinite;
+}
+
+#partners::before {
+
+    content: '';
+    /* Required for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    /* Higher than other elements */
+    box-shadow: inset 5rem 0px 2.5rem rgba(255, 255, 255, 1), inset -5rem 0px 2.5rem rgba(255, 255, 255, 1);
+    /* Top shadow */
+    z-index: 1;
+    pointer-events: none;
+    /* Ensure it doesn't block interactions */
 }
 
 #projects ul {
@@ -355,7 +376,7 @@ ul {
 #list_of_services {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    place-items: center;
+    /* place-items: center; */
     width: 80%;
     gap: 20px;
 }
@@ -487,7 +508,8 @@ nav a {
     color: #fff;
 }
 
-#nav2 i, #nav_mobile i {
+#nav2 i,
+#nav_mobile i {
     color: #fff;
     font-size: 46px;
     padding: 20px 0px;
@@ -495,7 +517,7 @@ nav a {
 
 .service a {
     text-decoration: none;
-  color: inherit;
+    color: inherit;
 }
 
 .special_light {
@@ -504,6 +526,17 @@ nav a {
 
 #menu {
     display: none;
+}
+
+.animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .hideDivs {
