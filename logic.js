@@ -1,30 +1,26 @@
-// window.addEventListener("scroll", function () {
-//   const navbar = document.getElementById("nav");
-//   const navbar2 = document.getElementById("nav2");
-//   if (window.scrollY > 0) {
-//     navbar2.style.backgroundColor = "#000";
-//     navbar2.classList.remove("nav");
-//     navbar2.classList.add("sticky");
-//     navbar2.classList.remove("hideDiv");
-//     navbar.classList.add("hideDiv");
-//   } else {
-//     navbar2.style.backgroundColor = "transparent";
-//     navbar2.classList.add("nav");
-//     navbar2.classList.remove("sticky");
-//     navbar2.classList.add("hideDiv");
-//     navbar.classList.remove("hideDiv");
-//   }
+
+
+// document.getElementById("menu").addEventListener("click", function () {
+
+//     document.getElementById("nav2").classList.add("hideDivs");
+//     document.getElementById("menu").classList.add("hideDivs");
+//     document.getElementById("nav_mobile").classList.remove("hideDivs");
+//     document.getElementById("cross").classList.remove("hideDivs");
+
 // });
 
+document.querySelectorAll(".menu").forEach(menu => {
 
-document.getElementById("menu").addEventListener("click", function () {
+    menu.addEventListener("click", function () {
 
-    document.getElementById("nav2").classList.add("hideDivs");
-    document.getElementById("menu").classList.add("hideDivs");
-    document.getElementById("nav_mobile").classList.remove("hideDivs");
-    document.getElementById("cross").classList.remove("hideDivs");
+        document.getElementById("nav2").classList.add("hideDivs");
+        document.getElementById("menu").classList.add("hideDivs");
+        document.getElementById("nav_mobile").classList.remove("hideDivs");
+        document.getElementById("cross").classList.remove("hideDivs");
+    
+    });
 
-});
+})
 
 document.getElementById("cross").addEventListener("click", function () {
 
@@ -55,4 +51,23 @@ a.addEventListener("click", function (e) {
     document.getElementById("cross").classList.add("hideDivs");
 
 });
+});
+
+function hideOnClickOutside(element) {
+    document.addEventListener('click', function(event) {
+        // Check if the click was outside the element
+        const isClickInside = element.contains(event.target);
+        const isClickInside2 = document.getElementById("list_of_services").contains(event.target);
+
+        if (!isClickInside && !isClickInside2) {
+            element.classList.add("hideDivs");  // Hide the element
+        }
+    });
+}
+
+const myElement = document.querySelectorAll('.full_service');
+
+myElement.forEach(element => {
+    // Call the function and pass the element
+    hideOnClickOutside(element);
 });
