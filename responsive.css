@@ -465,6 +465,11 @@
         padding-left: 1rem;
         padding-top: 2rem;
         overflow-y: scroll;
+        /* transform: translateY(8rem); */
+    }
+
+    .item .info-item p {
+        padding-bottom: 8rem;
     }
     
     .item .info-box {
