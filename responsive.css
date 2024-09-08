@@ -167,7 +167,7 @@
     }
 
     .who_text {
-        font-size: 26px;
+        font-size: 1rem;
     }
 
     #team_body {
@@ -179,6 +179,12 @@
         height: 100vh;
         overflow: hidden;
         padding: 0px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-size: cover;
     }
 
     #team .carousel {
@@ -189,13 +195,14 @@
     }
 
     .thumb {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translateY(40vh);
-        overflow-x: scroll;
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto auto auto;
+        transform: translateY(0%);
+        overflow: hidden;
         width: fit-content;
         position: inherit;
+        height: 22rem;
     }
 
     #team .item .img-box img {
@@ -212,10 +219,39 @@
         height: 30%;
     }
 
+    .info-slider .info-item {
+        height: 100%;
+        transform: translateY(0%);
+    }
+
+    .info-slider .info-item {
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        /* transform: translateY(calc(var(--i) * 50%)); */
+        transform: translateY(0%);
+        transition: 0.2s;
+    }
+
+    .info-slider {
+        width: 90%;
+        height: 100%;
+    }
+
     .item .info-box {
         position: absolute;
-        left: 0%;
-        transform: translateY(50%);
+        /* transform: translateY(-80%); */
+        width: 50vw;
+        height: 25rem;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 2.5rem;
+        height: 100%;
         width: 100%;
     }
 
@@ -236,7 +272,9 @@
     
     .info-slider .info-item {
         width: 100%;
-        transform: translateY(calc(var(--i)* 100%));
+        /* transform: translateY(calc(var(--i)* 100%)); */
+        height: 100%;
+        transform: translateY(0%);
     }
 
     #projects {
@@ -261,9 +299,23 @@
     .info-item {
         width: 100%;
     } */
+
+    .active {
+        transform: translateY(0%);
+    }
+    
+    .hideDivs {
+        display: none;
+        transform: translateY(calc(var(--i) * -100%));
+    }
+
 }
 
 @media only screen and (max-width: 431px) {
+
+    .special {
+        font-size: 32px;
+    }
 
     #team .carousel {
         height: calc(100vh - env(safe-area-inset-bottom));
@@ -348,6 +400,10 @@
         font-size: 46px;
     }
 
+    #partners .special, #work_done .special, #services .special {
+        font-size: 66px;
+    }
+
     #team h2 {
         font-size: 26px;
     }
@@ -369,22 +425,69 @@
         height: 200vh;
     }
 
-    #full_service .service {
-        background-color: transparent;
+    .full_service {
+        /* background-color: transparent;
         box-shadow: none;
-        padding: 20px 0px;
+        padding: 20px 0px; */
+        position: fixed;
+        top: 100px;
+        left: 1rem;
+        max-height: 85vh;
+        overflow-y: scroll;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #full_service .full_service {
+        width: 92%;
     }
 
     .item .info-box {
-        transform: translateY(10vh);
+        /* transform: translateY(10vh); */
+        width: 100%;
+        transform: translateY(0%);
+    }
+
+    .item .info-slider {
+        height: 100%;
+        width: 100%;
+    }
+
+    .item .info-item {
+        /* height: auto; */
+        height: 100%;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        padding-top: 2rem;
+        overflow-y: scroll;
+    }
+    
+    .item .info-box {
+        padding-left: 1rem;
+        padding-top: 2rem;
     }
 
     .thumb {
-        transform: translateY(35vh);
+        transform: translateY(5vh);
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 9.37rem; */
+        margin-bottom: 20px;
     }
 
     .thumb img {
         width: 80px;
         height: 80px;
     }
+
+    .hideDivs {
+        display: none;
+    }
+    
+    .hideDiv {
+        visibility: hidden;
+    }
+
 }
