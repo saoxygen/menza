@@ -1,3 +1,5 @@
+
+
 const thumbs = document.querySelectorAll(".thumb img");
 const infoSlider = document.querySelectorAll(".info-slider");
 const items = document.querySelectorAll(".item");
@@ -47,11 +49,17 @@ thumbs.forEach((thumb, ind) => {
 
     index = ind;
 
-    infoSlider.forEach((slide) => {
-      slide.style.transform = `translateY(${index * -100}%)`;
+    // infoSlider.forEach((slide) => {
+    //   slide.style.transform = `translateY(${index * -200}%)`;
+    //   // ${index * -200}
+    // });
+
+    items.forEach((item) => {
+      item.classList.add("hideDivs");
     });
 
     document.querySelector(".item.active").classList.remove("active");
     items[index].classList.add("active");
+    items[index].classList.remove("hideDivs");
   });
 });
