@@ -22,12 +22,20 @@
 
 #team {
     padding: 20px 0px;
-    background: linear-gradient(to right, #1c4d38, transparent), url("images/stock/Image 6.png");
+    background: linear-gradient(to right, #1c4d38,#1c4d38c2, transparent), url("images/stock/Image 6.png");
 }
 
 #team h2 {
     z-index: 2;
     color: #fff;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .item .img-box {
@@ -104,17 +112,25 @@
 
 .item .info-box {
     position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 450px;
-    height: 280px;
+    /* transform: translateY(-80%); */
+    width: 50vw;
+    height: 25rem;
     z-index: 1;
     overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 2.5rem;
+    height: 100%;
+    width: 100%;
 }
 
 .item.active .info-box {
     z-index: 2;
+}
+
+.info-slider {
+    width: 60%;
 }
 
 .info-box .info-slider {
@@ -122,12 +138,14 @@
 }
 
 .info-slider .info-item {
-    height: 280px;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    transform: translateY(calc(var(--i) * 100%));
+    /* transform: translateY(calc(var(--i) * 50%)); */
+    transform: translateY(0%);
+    transition: 0.2s;
 }
 
 .info-item h2 {
@@ -136,7 +154,7 @@
 }
 
 .info-item p {
-    font-size: 16px;
+    font-size: 1.2rem;
     margin: 15px 0 20px;
     text-align: left;
 }
@@ -181,9 +199,6 @@
     align-items: center;
 }
 
-.thumb li.selected {
-    border: 3px solid #fff;
-}
 
 .thumb li.disabled {
     pointer-events: none;
@@ -194,6 +209,11 @@
     height: 100%;
     object-fit: cover; 
 }*/
+
+.thumb .selected {
+    border: 3px solid #deb16d;
+}
+
 
 .thumb img {
     height: 100px;
@@ -215,4 +235,13 @@
 
 .thumb img.disabled {
     pointer-events: none;
+}
+
+.active {
+    transform: translateY(0%);
+}
+
+.hideDivs {
+    display: none;
+    transform: translateY(calc(var(--i) * -100%));
 }
