@@ -11,8 +11,9 @@
     .service img {
         /* filter: opacity(40%); */
         border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         border-end-start-radius: 0px;
-        height: auto;
+        height: 100%;
         width: 100%;
     }
 
