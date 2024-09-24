@@ -1,5 +1,20 @@
 @media only screen and (max-width: 912px) {
 
+    #full_service .service {
+        grid-template-columns: 100%;
+    }
+
+    #full_service .full_service .text_container {
+        justify-content: start;
+    }
+
+    .service img {
+        /* filter: opacity(40%); */
+        border-top-left-radius: 20px;
+        border-end-start-radius: 0px;
+        width: auto;
+    }
+
     #menu {
         display: flex;
     }
@@ -148,16 +163,10 @@
 
     #who img {}
 
-
     #who_text {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.95);
-        grid-template-columns: 98%;
-        place-items: center;
-        padding: 20px 20px;
-        z-index: 1;
-        overflow-y: scroll;
-        top: 0px;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 20px;
     }
 
     .who_text,
@@ -309,6 +318,18 @@
         transform: translateY(calc(var(--i) * -100%));
     }
 
+    #placeholder_div {
+        display: none;
+    }
+
+    #contact_content {
+        padding: 0px 2rem;
+    }
+
+    #contact_content div{
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 431px) {
@@ -427,6 +448,10 @@
 
     #projects {
         height: 200vh;
+    }
+
+    .bg-custom-green {
+        background-color: #1c4d38;
     }
 
     .full_service {
