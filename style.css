@@ -77,15 +77,56 @@ i {
     overflow: hidden;
 }
 
+.bg-custom-green {
+    background-color: #deb16d;
+    transition: 0.2s;
+}
+
+.bg-custom-green:hover {
+    background-color: #1c4d38;
+}
+
 #bg_img {
     width: 100%;
     height: 100%;
     filter: brightness(60%);
     filter: grayscale(100%);
-    background: linear-gradient(to right, #000, #000000a8, #fff), url('images/stadium.jpg');
+    background: linear-gradient(to right, #000, #000000a8, #fff), url('images/menza_sun.jpg');
     background-size: cover;
     background-blend-mode: multiply;
     overflow: hidden;
+}
+
+#contact {
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact_bg {
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+    filter: grayscale(100%);
+    background: linear-gradient(to right, #000, #000000a8, #fff), url('images/contact.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    overflow: hidden;
+}
+
+#contact h2 {
+    color: #fff;
+}
+
+#contact .pl-20 {
+    padding-left: 0.875rem;
+}
+
+#contact_content {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0px 10rem;
 }
 
 #hero_img {
@@ -229,6 +270,14 @@ ul {
     padding: 20px; */
 }
 
+#placeholder_div img {
+    height: auto;
+    width: 20vw;
+    border-radius: 50%;
+    background-color: #0000007a;
+    padding: 30px 20px;
+}
+
 #CTA {
     font-size: 20px;
     text-transform: uppercase;
@@ -243,7 +292,8 @@ ul {
 }
 
 #work_done {
-    height: 120vh;
+    /* height: 120vh; */
+    height: 100vh;
     justify-content: space-around;
     background: linear-gradient(to bottom, #deb16db0, #deb16d57, #fff);
 }
@@ -339,7 +389,6 @@ ul {
 .service img {
     height: 100px;
     width: auto;
-    margin-bottom: 20px;
 }
 
 #project_logos {
@@ -394,6 +443,7 @@ ul {
     box-sizing: content-box;
     background: linear-gradient(to bottom, #1c4d38, #fff, #fff);
     padding: 80px 0px;
+    justify-content: space-around;
 }
 
 nav a {
@@ -419,10 +469,30 @@ nav a {
 #full_service .service {
     background: #fff;
     cursor: default;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 0px;
+    gap: 10px;
+    /* background: linear-gradient(to left , #1c4d38, #fff); */
+}
+
+#full_service h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 #full_service .text {
     width: 90%;
+}
+
+#full_service .full_service .text_container {
+    height: 480px;
+    box-sizing:border-box;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .service:hover {
@@ -430,14 +500,18 @@ nav a {
 }
 
 .service img {
-    filter: opacity(40%);
+    /* filter: opacity(40%); */
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
     transition: filter 0.2s;
     transition: transform 0.5s;
+    height: 100%;
+    width: auto;
 }
 
 .service:hover img {
-    filter: opacity(100%);
-    transform: rotate(-2deg);
+    /* filter: opacity(100%); */
+    /* transform: rotate(-2deg); */
 }
 
 .who_text {
@@ -545,4 +619,8 @@ nav a {
 
 .hideDiv {
     visibility: hidden;
+}
+
+#full_service .hideDivs {
+    display: none;
 }
