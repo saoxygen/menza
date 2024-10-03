@@ -270,6 +270,53 @@ ul {
     padding: 20px; */
 }
 
+#placeholder_div {
+    background-color: #deb16db8;
+    padding: 0px 5rem;
+    color: #fff;
+    min-height: 619px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#placeholder_div .side {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#placeholder_div h3 {
+    color: #000;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+#placeholder_div h4 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+#placeholder_div .contact_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 519px;
+    min-height: 619px;
+    gap: 1rem;
+}
+
+#placeholder_div i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #fff;
+    min-width: 40px;
+}
+
 #placeholder_div img {
     height: auto;
     width: 20vw;
@@ -487,7 +534,7 @@ nav a {
 
 #full_service .full_service .text_container {
     height: 480px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 20px;
     display: flex;
     align-items: center;
