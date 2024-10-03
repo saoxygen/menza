@@ -18,11 +18,13 @@
 #team .carousel {
     height: 100vh;
     animation: none;
+
 }
 
 #team {
     padding: 20px 0px;
     background: linear-gradient(to right, #1c4d38,#1c4d38c2, transparent), url("images/stock/Image 6.png");
+    gap: 10px;
 }
 
 #team h2 {
@@ -34,15 +36,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* display: grid;
+    grid-template-columns: 70% 30%; */
     height: 100%;
     width: 100%;
 }
 
 .item .img-box {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
-    width: 100%;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -98,8 +102,8 @@
 
 .img-box img {
     position: absolute;
-    bottom: 0;
-    height: 54%;
+    bottom: -35%;
+    height: 85%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .2));
     transform: translateX(20%);
     transform: translateY(-50%);
@@ -130,7 +134,7 @@
 }
 
 .info-slider {
-    width: 60%;
+    width: 65%;
 }
 
 .info-box .info-slider {
@@ -177,12 +181,13 @@
 
 .thumb {
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-auto-flow: column;
     gap: 20px;
-    position: absolute;
+    /* position: absolute; */
+    /* grid-template-columns: 100px 100px;
     right: 5%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     list-style: none;
     z-index: 100;
 }
