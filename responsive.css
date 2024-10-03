@@ -1,5 +1,20 @@
 @media only screen and (max-width: 912px) {
 
+    #contact {
+        min-height: 200vh;
+    }
+
+    #contact_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-box img {
+        display: none;
+    }
+
     #full_service .service {
         grid-template-columns: 100%;
     }
@@ -90,6 +105,7 @@
 
     #full_service {
         width: 90%;
+
     }
 
     #full_service .service {
@@ -213,7 +229,10 @@
         overflow: hidden;
         width: fit-content;
         position: inherit;
-        height: 22rem;
+        height: 150px;
+        margin: 0px;
+        width: 100%;
+        overflow-x: scroll;
     }
 
     #team .item .img-box img {
@@ -270,6 +289,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
     #back i {
@@ -321,7 +341,22 @@
     }
 
     #placeholder_div {
-        display: none;
+        padding: 10px;
+    }
+
+    #placeholder_div .contact_details {
+        min-width: 419px;
+        justify-content: space-around;
+    }
+
+    #placeholder_div .side2 {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    #placeholder_div h4 {
+        text-wrap: wrap;
+        width: 70%;
     }
 
     #contact_content {
@@ -432,10 +467,15 @@
     #work_done .special,
     #services .special {
         font-size: 66px;
+        text-align: center;
     }
 
     #team h2 {
         font-size: 26px;
+    }
+    #team .sub_header {
+        font-size: 26px;
+        text-align: center;
     }
 
     #hero_content {
@@ -504,16 +544,16 @@
 
     .item .info-box {
         padding-left: 1rem;
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
     }
 
     .thumb {
-        transform: translateY(5vh);
+
         /* display: flex;
         justify-content: center;
         align-items: center;
-        height: 9.37rem; */
-        margin-bottom: 20px;
+        height: 9.37rem; 
+        margin-bottom: 20px;*/
     }
 
     .thumb img {
