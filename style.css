@@ -126,7 +126,7 @@ i {
     z-index: 1;
     width: 100%;
     justify-content: space-around;
-    padding: 0px 10rem;
+    /* padding: 0px 10rem; */
 }
 
 #hero_img {
