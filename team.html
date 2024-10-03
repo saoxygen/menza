@@ -14,19 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <!-- font-awesome -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-
-<body id="bbody">
-    <a id="back" href="index.html#hero"><i class="fa-solid fa-arrow-left-long"></i></a>
-    <!-- <nav id="nav2" class="navbar straight black sticky">
-        <ul class="straight bold_font">
-                        <a href="index.html#hero">
-                            <li>HOME</li>
-                        </a>
+<body>
+    <nav id="nav2" class="navbar straight nav">
+        <ul id="nav2_ul" class="straight bold_font">
+            <a href="index.html#hero">
+                <li>HOME</li>
+            </a>
             <li class="dropdown">
                 <button class="dropbtn">ABOUT US</button>
                 <div class="dropdown-content">
@@ -42,230 +41,573 @@
             </a>
 
         </ul>
-    </nav> -->
-    <div id="team_body">
-    <section id="team" class="section column ">
-        <h2 class="special">Meet Our Team</h2>
-        <h2 class="sub_header"> of Independent Expert & Consultants</h2>
-
-        <div class="thumb animation">
-            <img class="selected" src="images/Consultants/Senzo round.png">
-            <img src="images/Consultants/Bertie round.png">
-            <img src="images/Consultants/Muditambi round.png">
-            <img src="images/Consultants/Russel round.png">
-            <img src="images/Consultants/Phillip rounded.png">
-            <img src="images/Consultants/kabelo rounded.png">
-            <img src="images/Consultants/Andre Rounded.png">
-            <!-- <img class="selected" src="https://ui-avatars.com/api/?name=Senzo+Mbatha">
-            <img src="https://ui-avatars.com/api/?name=Muditambi+Ravele">
-            <img src="https://ui-avatars.com/api/?name=Russell+Paul">
-            <img src="https://ui-avatars.com/api/?name=Bertie+Grobbelaar">
-            <img src="https://ui-avatars.com/api/?name=Phillip+Masimong">
-            <img src="https://ui-avatars.com/api/?name=Kabelo+Bosilong">
-            <img src="https://ui-avatars.com/api/?name=Andre+Homan"> -->
-        </div>
-
-        <div class="carousel">
-
-            <div class="item animation active">
-                <div class="img-box">
-                    <img src="images/Consultants/Senzo round.png" alt="Senzo">
+        <i id="menu" class="fa-solid fa-bars menu"></i>
+    </nav>
+    <nav id="nav_mobile" class="navbar straight nav hideDivs">
+        <ul id="nav_mobile_ul" class="straight bold_font">
+            <a href="index.html#hero">
+                <li>HOME</li>
+            </a>
+            <li class="dropdown">
+                <button class="dropbtn">ABOUT US</button>
+                <div class="dropdown-content">
+                    <a href="who.html#who">WHO ARE WE</a>
+                    <a href="team.html#team">MEET OUR TEAM</a>
                 </div>
+            </li>
+            <a href="index.html#services">
+                <li>SERVICES</li>
+            </a>
+            <a href="index.html#work_done">
+                <li>PROJECTS</li>
+            </a>
 
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:0;">
-                            <h2>Senzo Mbatha</h2>
-                            <!-- <p>Senzo Mbatha is an experienced South African Executive Leader with a robust and solid
-                                background in sports management.
-                                He has driven organizational excellence across multiple African countries and has held
-                                notable roles in the African
-                                sports and football arena.</p> -->
-                                <p>Senzo Mbatha is an experienced South African Executive Leader with a robust and solid background in sports management. He has driven organizational excellence across multiple African countries and has held notable roles in the African sports and football arena. His expertise lies in strategic planning, financial acumen, marketing, branding, public relations, and brand management. Senzo has been involved in significant and successful projects such as the 2010 FIFA World Cup and Confederation of African Football (CAF), developing, growing and ultimately honing his project management skills. He has also made impactful contributions in Tanzania, enhancing brand awareness for Tanzanian football teams. His ability to enhance brand visibility, a key aspect of his marketing skills, is evident in his international experience as a Management Consultant and CEO, where he has effectively represented South Africa on a global scale, overseeing budgets, driving operational excellence, and managing international marketing and public relations initiatives.</p>
-                        </div>
+        </ul>
+        <i id="cross" class="fa-solid fa-x hideDivs"></i>
+    </nav>
+    <section id="hero" class="column">
+        <div id="bg_img"></div>
+        <!-- <nav id="nav" class="navbar straight nav">
+            <ul class="straight bold_font">
+                <li class="dropdown">
+                    <button class="dropbtn">ABOUT US</button>
+                    <div class="dropdown-content">
+                        <a href="who.html#who">WHO ARE WE</a>
+                        <a href="team.html#team">MEET OUR TEAM</a>
                     </div>
-                </div>
+                </li>
+                <a href="index.html#services">
+                    <li>SERVICES</li>
+                </a>
+                <a href="index.html#work_done">
+                    <li>PROJECTS</li>
+                </a>
 
+            </ul>
+        </nav> -->
+        <section id="hero_content" class="straight animation">
+            <div id="CTA"><span class="important bold_font">Engage with MGI</span><br><br> for comprehensive solutions
+                <br> in the business of sport and events <br><br>
+                <a href="#contact"><button id="cta_btn">Contact Us <i class="fa-solid fa-phone"></i></button></a>
+            </div>
+            <div id="logo" class="animation">
+                <img src="images/icon/logo.jpg" alt="">
+                <!--  -->
+            </div>
+        </section>
+        <!-- <img id="hero_img" src="images/icon/icon/2022.png" alt=""> -->
+        <!-- <section id="partners" class="column animation">
+            <h2 class="special">Partners</h2>
+            <div class="carousel straight">
+                <img src="https://www.sail.co.za/wp-content/uploads/2023/02/SAIL-Stadium-Commercialisation.png" alt="">
+                <img src="https://www.stadiummanagement.co.za/wp-content/uploads/2021/03/SMSA-logo@2x-300x74.png"
+                    alt="">
+                <img src="https://www.sail.co.za/wp-content/uploads/2023/02/SAIL-Stadium-Commercialisation.png" alt="">
+                <img src="https://www.stadiummanagement.co.za/wp-content/uploads/2021/03/SMSA-logo@2x-300x74.png"
+                    alt="">
+                <img src="https://www.sail.co.za/wp-content/uploads/2023/02/SAIL-Stadium-Commercialisation.png" alt="">
+                <img src="https://www.stadiummanagement.co.za/wp-content/uploads/2021/03/SMSA-logo@2x-300x74.png"
+                    alt="">
+                <img src="https://www.sail.co.za/wp-content/uploads/2023/02/SAIL-Stadium-Commercialisation.png" alt="">
+                <img src="https://www.stadiummanagement.co.za/wp-content/uploads/2021/03/SMSA-logo@2x-300x74.png"
+                    alt="">
+            </div>
+        </section> -->
+    </section>
+    <section id="work_done" class="column section">
+        <!-- <section id="partners" class="column">
+            <h2 class="special">Partners</h2>
+            <div class="carousel straight">
+                <img src="https://www.sail.co.za/wp-content/uploads/2023/02/SAIL-Stadium-Commercialisation.png" alt="">
+                <img src="https://www.stadiummanagement.co.za/wp-content/uploads/2021/03/SMSA-logo@2x-300x74.png"
+                    alt="">
+                <img src="https://www.sail.co.za/wp-content/uploads/2023/02/SAIL-Stadium-Commercialisation.png" alt="">
+                <img src="https://www.stadiummanagement.co.za/wp-content/uploads/2021/03/SMSA-logo@2x-300x74.png"
+                    alt="">
+                <img src="https://www.sail.co.za/wp-content/uploads/2023/02/SAIL-Stadium-Commercialisation.png" alt="">
+                <img src="https://www.stadiummanagement.co.za/wp-content/uploads/2021/03/SMSA-logo@2x-300x74.png"
+                    alt="">
+                <img src="https://www.sail.co.za/wp-content/uploads/2023/02/SAIL-Stadium-Commercialisation.png" alt="">
+                <img src="https://www.stadiummanagement.co.za/wp-content/uploads/2021/03/SMSA-logo@2x-300x74.png"
+                    alt="">
+            </div>
+        </section> -->
+        <section id="projects" class="column">
+            <h2 class="special">Experience and Projects</h2>
+            <!-- <div class="straight">
+                <ul class="straight">
+                    <li id="International" class="active_project">International</li>
+                    <li id="Continental">Continental</li>
+                    <li id="East">East Africa</li>
+                    <li id="National">National</li>
+                </ul>
+                <ul class="straight">
+                    <li id="Associations">National Associations and Leagues</li>
+                    <li id="Tournaments">National Tournaments</li>
+                    <li id="Soccer">National Soccer</li>
+                </ul> 
+            </div>-->
+
+            <div id="project_logos" class="straight animation">
+                <img class="item1" src="images/projects/Fifa 2009.png" alt="Fifa 2009 Project">
+                <img class="item2" src="images/projects/Fifa 2010.png" alt="Fifa 2010 Project">
+                <img class="item3" src="images/projects/Fifa 2022.png" alt="Fifa 2022 Project">
+                <img class="item4" src="images/projects/ICCC WC 2003.png" alt="ICCC WC 2003 Project">
+                <img class="item5" src="images/projects/Continental/CAF 2013.png" alt="CAF 2013 Project">
+                <img class="item6" src="images/projects/East Africa/Football African.png" alt="Fifa 2009 Project">
+                <img class="item7" src="images/projects/East Africa/Simba.png" alt="Simba Project">
+                <img class="item8" src="images/projects/East Africa/Young Africans.png" alt="Young Africans Project">
+                <img class="item9" src="images/projects/South Africa/PSL.png" alt="Fifa 2009 Project">
+                <img class="item10" src="images/projects/South Africa/BFA.png" alt="Fifa 2009 Project">
+                <img class="item11" src="images/projects/South Africa/COSAFA.png" alt="Fifa 2009 Project">
+                <img class="item12" src="images/projects/South Africa/SAFA.png" alt="Fifa 2009 Project">
+                <img class="item13" src="images/projects/South Africa/Engen.png" alt="Fifa 2009 Project">
+                <img class="item14" src="images/projects/South Africa/Nike.png" alt="Fifa 2009 Project">
+                <img class="item15" src="images/projects/South Africa/Olando Pirates.png" alt="Fifa 2009 Project">
+                <img class="item16" src="images/projects/South Africa/Bay United.png" alt="Fifa 2009 Project">
+                <img class="item17" src="images/projects/South Africa/Platinum Stars.png" alt="Fifa 2009 Project">
+                <img class="item18" src="images/projects/South Africa/UPFBC.png" alt="Fifa 2009 Project">
             </div>
 
 
-            <div class="item animation">
-
-                <div class="img-box">
-                    <img src="images/Consultants/Bertie round.png" alt="Bertie">
-                </div>
-
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:1;">
-                            <h2>Bertie Grobbelaar</h2>
-                            <!-- <p>Stadium Management SA (SMSA) is the foremost stadium management group in South Africa,
-                                overseeing four prominent
-                                stadiums in Johannesburg, together with other Stadia situated throughout South Africa.
-                                These venues are managed
-                                independently by SMSA without any external financial support.</p> -->
-                                <p>Stadium Management SA (SMSA) is the foremost stadium management group in South Africa, overseeing four prominent stadiums in Johannesburg, together with other Stadia situated throughout South Africa. These venues are managed independently by SMSA without any external financial support. SMSA funds and operates these versatile venues, which host a diverse range of world-class events covering sports, entertainment, conferences, and political gatherings. SMSA's comprehensive services include finance, operations, facilities management, and event planning. Committed to enriching the local community, SMSA actively contributes to the empowerment and upliftment of underprivileged members within its scope of operations : 
-                                    www.stadiummanagement.co.za
-                                    </p>
-                        </div>
-                    </div>
-                </div>
-
+            <!-- <div class="projects_done straight" id="International_projects">
+                <img src="images/projects/Fifa 2009.png" alt="Fifa 2009 Project">
+                <img src="images/projects/Fifa 2010.png" alt="Fifa 2010 Project">
+                <img src="images/projects/Fifa 2022.png" alt="Fifa 2022 Project">
+                <img src="images/projects/ICCC WC 2003.png" alt="ICCC WC 2003 Project">
             </div>
-
-
-            <div class="item animation">
-
-                <div class="img-box">
-                    <img src="images/Consultants/Muditambi round.png" alt="Muditambi">
-                </div>
-
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:2;">
-                            <h2>Muditambi Ravele</h2>
-                            <!-- <p>Ms. Ravele is a highly accomplished individual with a diverse sports, marketing, and
-                                management background. She has
-                                played critical roles in promoting women in sports and has held influential positions in
-                                various sports organizations.</p> -->
-                                <p>Ms. Ravele is a highly accomplished individual with a diverse sports, marketing, and management background. She has played critical roles in promoting women in sports and has held influential positions in various sports organizations. Her extensive experience and educational qualifications have equipped her to excel in strategic management, project management, financial management, marketing, communication, and event management within the greater sports industry. www.sawsf.or.za</p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="projects_done straight" id="Continental_projects">
+                <img src="images/projects/Continental/CAF 2013.png" alt="CAF 2013 Project">
             </div>
-
-
-            <div class="item animation">
-
-                <div class="img-box">
-                    <img src="images/Consultants/Russel round.png" alt="Russel">
-                </div>
-
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:3;">
-                            <h2>Russell Paul</h2>
-                            <!-- <p>Russell Paul is a seasoned sports executive with experience in leading bids for
-                                significant sporting events. He has held
-                                senior management and leadership roles in South Africa and internationally.</p> -->
-                                <p>Russell Paul is a seasoned sports executive with experience in leading bids for significant sporting events. He has held senior management and leadership roles in South Africa and internationally. Some of his more notable positions include CEO of the South African bid to host the 2027 FIFA Women's World Cup, COO of the FIFA World Cup Qatar 2022, and Acting CEO of the South African Football Association (SAFA). Russell has also served as Divisional Manager of Competitions for the 2010 FIFA World Cup LOC South Africa. He has been involved in organizing various international tournaments such as the Nike Premier Cup, the Meridian Cup, the CAF African Women's Championship, the African Youth Championship, the Africa Cup of Nations, the African Nations Championship, the Africa Futsal Cup of Nations, and the COSAFA Cup.</p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="projects_done straight" id="East Africa_projects">
+                <img src="images/projects/East Africa/Football African.png" alt="Fifa 2009 Project">
+                <img src="images/projects/East Africa/Simba.png" alt="Simba Project">
+                <img src="images/projects/East Africa/Young Africans.png" alt="Young Africans Project">
             </div>
-
-
-            <div class="item animation">
-
-                <div class="img-box">
-                    <img src="images/Consultants/Phillip rounded.png" alt="Phillip">
-                </div>
-
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:4;">
-                            <h2>Phillip Masimong</h2>
-                            <!-- <p>With extensive experience in risk, safety, and security management within the sports and
-                                law enforcement sectors,
-                                Phillip has consistently demonstrated a proactive approach to public safety and
-                                security.</p> -->
-                                <p>With extensive experience in risk, safety, and security management within the sports and law enforcement sectors, Phillip has consistently demonstrated a proactive approach to public safety and security. As the General Manager of the Premier Soccer League of South Africa (PSL), he successfully developed and implemented comprehensive safety and security measures, including creating the PSL Security Manual. His role involved coordinating with various stakeholders, conducting stadium inspections, and managing accreditation systems for all stakeholders. He has also served as a Superintendent in the South African Police Services, where he played a pivotal role as a Provincial coordinator for the 2010 FIFA World Cup and other significant and successful sporting events. His responsibilities included developing and implementing security plans, conducting risk analyses for stadia  and venues, and chairing security meetings. </p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="projects_done straight" id="Associations">
+                <img src="images/projects/South Africa/PSL.png" alt="Fifa 2009 Project">
+                <img src="images/projects/South Africa/BFA.png" alt="Fifa 2009 Project">
+                <img src="images/projects/South Africa/COSAFA.png" alt="Fifa 2009 Project">
+                <img src="images/projects/South Africa/SAFA.png" alt="Fifa 2009 Project">
             </div>
-
-            <div class="item animation">
-
-                <div class="img-box">
-                    <img src="images/Consultants/kabelo rounded.png" alt="Kabelo">
-                </div>
-
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:5;">
-                            <h2>Kabelo Bosilong</h2>
-                            <!-- <p>Kabelo has a diverse and impressive portfolio within the football industry, encompassing
-                                roles such as Professional
-                                Football Department Advisor, Head of Venue Management, CAF General Coordinator, CAF
-                                AFCON Host City Manager, and various
-                                other essential positions.</p> -->
-                                <p>Kabelo has a diverse and impressive portfolio within the football industry, encompassing roles such as Professional Football Department Advisor, Head of Venue Management, CAF General Coordinator, CAF AFCON Host City Manager, and various other essential positions. His expertise includes:
-                                    <br><br>
-                                    •	Managing AFL staff.<br>
-                                    •	Coordinating and overseeing venue administration.<br>
-                                    •	Organizing high-profile events such as the CAF AFCON and CAF Champions League.<br>
-                                    •	Conducting Club Licensing seminars and stadium inspections across various African countries.
-                                    <br><br>
-                                    His extensive experience managing logistics, sponsorship, and stakeholder relations has been instrumental in ensuring the successful execution of football events and operations. His strong abilities in this crucial area inspire trust and confidence in his audience.
-                                    </p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="projects_done straight" id="Tournaments">
+                <img src="images/projects/South Africa/Engen.png" alt="Fifa 2009 Project">
+                <img src="images/projects/South Africa/Nike.png" alt="Fifa 2009 Project">
             </div>
-
-            <div class="item animation">
-
-                <div class="img-box">
-                    <img src="images/Consultants/Andre Rounded.png" alt="Andre">
-                </div>
-
-                <div class="info-box">
-                    <div class="info-slider">
-                        <div class="info-item" style="--i:6;">
-                            <h2>Andre Homan</h2>
-                            <!-- <p>Andre is the lead Consultant and Current Commercial Director at SAIL. SAIL is a leading
-                                sports and events marketing
-                                company in Southern Africa with over 20 years of experience. They specialize in
-                                sponsorships, rights management, and
-                                advertising of sports and events properties.</p> -->
-                                <p>Andre is the lead Consultant and Current Commercial Director at SAIL. SAIL is a leading sports and events marketing company in Southern Africa with over 20 years of experience. They specialize in sponsorships, rights management, and advertising of sports and events properties. Additionally, SAIL offers hospitality solutions and corporate and lifestyle event project management. They connect consumers with brands through meaningful sports and lifestyle event experiences. SAIL assists clients with strategy implementation and brand exposure to engage millions of fans not only locally, but also worldwide. Their services include rights management, sponsorships management, hospitality and suite management, consulting, stadium commercialization, merchandise and licensing, and various event project management services. Their expertise in the planning and executing of both the opening and closing ceremonies held at many major sporting events, including Football, Rugby and Cricket places such expertise at a premium and undoubtedly places MGI ahead of the pack.
-                                    www.sail.co.za
-                                    </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- <ul class="thumb">
-                <li class="selected"><img src="images/Consultants/Senzo round.png"></li>
-                <li><img src="images/Consultants/Bertie round.png"></li>
-                <li><img src="images/Consultants/Muditambi round.png"></li>
-                <li><img src="images/Consultants/Russel round.png"></li>
-                <li><img src="images/Consultants/Phillip rounded.png"></li>
-                <li><img src="images/Consultants/kabelo rounded.png"></li>
-                <li><img src="images/Consultants/Andre Rounded.png"></li>
-            </ul> -->
-
-            <!--<div><img class="selected" src="images/Consultants/Senzo round.png">
-                <img src="images/Consultants/Bertie round.png">
-                <img src="images/Consultants/Muditambi round.png">
-                <img src="images/Consultants/Russel round.png">
-                <img src="images/Consultants/Phillip rounded.png">
-                <img src="images/Consultants/kabelo rounded.png">
-                <img src="images/Consultants/Andre Rounded.png"> </div>-->
-
-            <!-- <div class="thumb animation">
-                <img class="selected" src="https://ui-avatars.com/api/?name=Senzo+Mbatha">
-                <img src="https://ui-avatars.com/api/?name=Muditambi+Ravele">
-                <img src="https://ui-avatars.com/api/?name=Russell+Paul">
-                <img src="https://ui-avatars.com/api/?name=Bertie+Grobbelaar">
-                <img src="https://ui-avatars.com/api/?name=Phillip+Masimong">
-                <img src="https://ui-avatars.com/api/?name=Kabelo+Bosilong">
-                <img src="https://ui-avatars.com/api/?name=Andre+Homan">
+            <div class="projects_done straight" id="Soccer">
+                <img src="images/projects/South Africa/Olando Pirates.png" alt="Fifa 2009 Project">
+                <img src="images/projects/South Africa/Bay United.png" alt="Fifa 2009 Project">
+                <img src="images/projects/South Africa/Platinum Stars.png" alt="Fifa 2009 Project">
+                <img src="images/projects/South Africa/UPFBC.png" alt="Fifa 2009 Project">
             </div> -->
+        </section>
+    </section>
+    <section id="services" class="column section">
+        <h2 class="special">Services</h2>
+        <div id="list_of_services" class="animation">
 
+            <div class="service column" onclick="serviceSwitch('Sports Events Management')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Sports Events Management</h3>
+            </div>
+
+            <div class="service column" onclick="serviceSwitch('Tournament Operations')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Tournament Operations</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Ceremonies')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Ceremonies</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Fan parks')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Fan parks</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Legacy Programms')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Legacy Programms</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Stadium Management')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Stadium Management</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Pitch and Surfaces Management')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Pitch and Surfaces Management</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Supply of Sports Equipment')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Supply of Sports Equipment</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Marketing Communications')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Marketing Communications</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Sponsorship Management and Sourcing')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Sponsorship Management and Sourcing</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Professional Club and League Management')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Professional Club and League Management</h3>
+            </div>
+            <div class="service column" onclick="serviceSwitch('Turn-Key travel and logistics for clubs and associations')">
+                <!-- <a href="">
+                </a> -->
+                <h3 class="special_light">Turn-Key travel and logistics for clubs and associations</h3>
+            </div>
+        </div>
+        <div id="full_service" class="services">
+            <div class="service full_service column hideDivs" id="Sports Events Management">
+                <img src="images/sports_management.jpg" alt="">
+               <div class="text_container">
+                <h3 class="special_light">Sports Events Management</h3>
+                <div class="text">MGI has a demonstrable track record in managing significant international Sporting
+                    events and providing high-level event
+                    management services. From planning to monitoring and delivering events, we ensure every detail is
+                    meticulously planned
+                    and managed. Our list of experience includes the planning and management of, inter alia the FIFA
+                    2009 Confederations Cup
+                    and the 2010 FIFA World Cup, in addition to our association with the 2013 Africa Cup of Nations held
+                    in South Africa.
+                    The experience gained relative to these events / tournaments was invaluable and make MGI your best
+                    option for managing
+                    any major international sporting event / tournament, and installs a sense of confidence and a level
+                    of comfort in our
+                    ability to deliver successful and memorable events.</div>
+               </div>
+            </div>
+            <div class="service full_service column hideDivs" id="Tournament Operations">
+                <img src="images/tournament.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Tournament Operations</h3>
+                <div class="text">MGI focuses on the event / tournament requirements as prescribed by Rights Holder/s to
+                    deliver a professional, memorable
+                    and world-class tournament. We engage our expert consultants to consider, analysis and ultimately
+                    fully understand the
+                    Scope of work together with the requirements of the specific Project, this to ensure that the
+                    tournaments are delivered
+                    professionally, within the designated Scope of work and within the stipulated time schedules. The
+                    Principal Consultant (
+                    Senzo Mbatha ) assumes the tournament director role and with his vast and varied knowledge and
+                    expertise, provides the
+                    stability and comfort to produce the elevated standards of high-level tournaments that the Clients
+                    have come to expect.
+                    In support of Senzo, the Project Management Office is focused on the tracking, monitoring and
+                    deliver of the Project on
+                    time. Accordingly, MGI delivers world-class tournaments, ensuring the Project is both memorable and
+                    successful and that
+                    the Client is assured of our commitment to excellence.</div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Ceremonies">
+                <img src="images/ceremonies.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Ceremonies</h3>
+                <div class="text">Ceremonies play an integral role in showcasing the culture, art, and traditions of
+                    nations that host events. Through its
+                    dedicated Arts and Culture Consultants, MGI will deliver a concept, artistic choreography and the
+                    final act at the
+                    opening and closing ceremonies, including a typical "Superbowl" showcasing of an international
+                    event. A deep and
+                    profound grasp and understanding of the local content and legacy creation for the local community
+                    remains MGI’s priority
+                    – ultimately, to empower and leave a lasting legacy in the host territories in which the Projects
+                    are executed.
+                </div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Fan parks">
+                <img src="images/fan_parks.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Fan parks</h3>
+                    <div class="text">Fan parks and fan zones are large open spaces created away from an important sporting
+                        event, where people engage with
+                        each other and watch the event live on giant television screens. Due to nature of international
+                        events, it is not
+                        possible for everyone to get access to the Stadia. Only some enjoy the stadia atmosphere, and thus,
+                        fan parks become the
+                        best option for the unfortunate ones who are unable ( for various reasons ) to secure tickets to the
+                        stadia. MGI is able
+                        provide high-level, security-fiendly fan parks for spectators and fans. The Fan Parks provide an
+                        additional revenue and
+                        lucrative source of income, depending on what the event organisers wish to achieve with the
+                        operation of the Fan parks</div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Legacy Programms">
+                <img src="images/lecy.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Legacy Programms</h3>
+                    <div class="text">MGI is deeply committed to leaving a lasting legacy in all areas of eventing in
+                        different territories. We identify and
+                        can create tailor-made legacy programms that resonate and align with our Client's goals. These
+                        programms, created in
+                        association with our Clients focus on infrastructure legacy through targeted infrastructure projects
+                        for schools and
+                        local communities, skills and local knowledge legacy through training and development, and legacy
+                        funds for future
+                        sports development through a joint agreement with the Rights Holders to donate certain proceeds
+                        towards future sports
+                        development in the country. With the knowledge and benchmarking of the 2010 South Africa FIFA Legacy
+                        funds, MGI
+                        understands the nuances involved in such matters and retains the expertise to craft the correct and
+                        most beneficial path
+                        for the Client, the tournament and the legacy emanating therefrom, this for the ultimate benefit of
+                        the host country.</div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Stadium Management">
+                <img src="images/stadium_m.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Stadium Management</h3>
+                    <div class="text">The lack of Stadia management is the principle cause of the so-called white elephants
+                        and deteriorating infrastructure
+                        due to the lack of maintenance and use after the completion of international sporting events. MGI,
+                        together with its
+                        consultants and partners in the stadia management sector are able to assist in the planning and
+                        managing of the stadia
+                        infrastructure post event/s completion. The continued Commercialising and sustainability of this
+                        infrastructure requires
+                        expert knowledge and experience to allow for the longevity of the benefits of the stadia
+                        infrastructure. MGI is the
+                        African partner of choice in managing, commercialising and ultimately monetising the stadia
+                        infrastructure.</div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Pitch and Surfaces Management">
+                <img src="images/pitch.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Pitch and Surfaces Management</h3>
+                    <div class="text">The pitch or surface of the Stadia and/or the Arena is as essential element, as
+                        important as the building Infrastructure
+                        itself. MGI understand the importance and significance of providing quality playing surfaces that
+                        conform to
+                        international standards, this not only to ensure the protection against injuries, but also to create
+                        a professional aura
+                        around the event/tournament. There is nothing more unsightly ( to both Players and Fans alike ) than
+                        an ill prepared,
+                        rough and uneven playing surface. Through its vast collaborations with experts in sporting surfaces,
+                        from artificial
+                        pitches to clay courts to natural grass pitches, MGI is your one-stop shop service provider for all
+                        your sporting
+                        surface requirements. The Principal Consultant has participated in several football pitch management
+                        seminars and
+                        understands this area of Service, making MGI the preferred service provider.</div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Supply of Sports Equipment">
+                <img src="images/equipment.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Supply of Sports Equipment</h3>
+                    <div class="text">MGI sources its sporting equipment from accredited suppliers worldwide. We ensure the
+                        quality of the equipment which we
+                        provide, via rigorous quality control processes and by engaging and working only with reputable
+                        suppliers. For all your
+                        sporting equipment requirements , including team and stadia equipment, goals, and courts, as well as
+                        tailor-made
+                        requirements, MGI is your go-to provider.</div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Marketing Communications">
+                <img src="images/marketing.jpg" alt="">
+                <div class="text_container"> 
+                    <h3 class="special_light">Marketing Communications</h3>
+                    <div class="text">Thorough communication before, during, and after the event/ tournament ensures its
+                        success. Strong communication within
+                        the team builds interest, provides the necessary information, and gathers feedback for future
+                        improvements. Conversely,
+                        marketing is critical in ensuring that the event and its progress are followed and enjoyed. With the
+                        current social
+                        media phenomenon, it is essential for event organisers to consistently promote, market and
+                        communicate positively about
+                        their event operations and progress. The impact of positive messaging not only helps build public
+                        confidence but also
+                        builds trust in the stakeholders. MGI has experts in the field to craft high-level communication and
+                        marketing
+                        strategies to reach audiences anywhere around the globe and in any language of preference.</div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Sponsorship Management and Sourcing">
+                <img src="images/sponsor.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Sponsorship Management and Sourcing</h3>
+                    <div class="text">MGI is your one-stop shop for all sponsorship requirements, from sourcing same to the
+                        management and retention thereof.
+                        It is often a challenge for organisations to have a smooth relationship with their sponsors due to
+                        the parties' need for
+                        signage and alignment and the onerous return on investment ( ROI ) demanded by the sponsors. MGI
+                        specialises in research
+                        and evaluation services to analyse the value of brand and company involvement in football. We
+                        determine the impact of
+                        sponsors on the sport, its participants, and all it’s stakeholders. Our services include evaluating
+                        sponsorship ROI and
+                        providing continuous feedback on their value and impact using highly sophisticated tracking and
+                        evaluation equipment. We
+                        also assess future risks associated with the relationship between sponsors, brands, and sporting
+                        bodies. Our risk
+                        assessment services assist organisations to identify potential challenges and provide mitigating
+                        strategies to ensure
+                        the long-term sustainability of mutually beneficial relationships.
+    
+                        MGI provides specific and specialised training to sporting bodies and associated personnel in the
+                        sponsorship
+                        relationship. This comprehensive training assists the Client to understand the expectations and
+                        deliverables of a
+                        successful sponsorship partnership. Through workshops and online continuous training, MGI ensures
+                        that the Client is
+                        adequately trained, prepared and upskilled in critical areas such as negotiation skills, contract
+                        management, and
+                        relationship building.
+                    </div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Professional Club and League Management">
+                <img src="images/clubs.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Professional Club and League Management</h3>
+                    <div class="text">MGI provides high-quality consulting services for setting up, managing and running
+                        football clubs and leagues. In this
+                        regards, MGI is possessed of the following skill sets which are required to establish, manage and
+                        run a successful and
+                        profitable club and league :</div>
+                </div>
+
+            </div>
+            <div class="service full_service column hideDivs" id="Turn-Key travel and logistics for clubs and associations">
+                <img src="images/travel.jpg" alt="">
+                <div class="text_container">
+                    <h3 class="special_light">Turn-Key travel and logistics for clubs and associations</h3>
+                    <div class="text">Travel and logistics can be a daunting task for clubs and associations in Africa, often leading to delays and confusion. Menza Group International, however, offers comprehensive turnkey solutions for all African travel and logistics needs, providing a sense of security. We handle visas, schedule commercial or private flights, offer affordable accommodation solutions, and arrange internal transport. Our advance team takes care of all your logistics, including surveying your training grounds and providing travelling distances from hotels to playing grounds, so you can focus on your game, secure your victory, and return to your destination without any hassle.</div>
+                </div>
+
+            </div>
         </div>
     </section>
-</div>
+    <section class="section column" id="contact">
+        <div id="contact_bg"></div>
+        <div id="contact_content" class="straight animation">
+            <div>
+                <form class="mx-auto mt-16 max-w-xl sm:mt-20">
+                    <h2 class="special">Contact US</h2>
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                        <div>
+                            <label for="first-name" class="block text-sm font-semibold leading-6 text-white">First
+                                name</label>
+                            <div class="mt-2.5">
+                                <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-semibold leading-6 text-white">Last
+                                name</label>
+                            <div class="mt-2.5">
+                                <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="email" class="block text-sm font-semibold leading-6 text-white">Email</label>
+                            <div class="mt-2.5">
+                                <input type="email" name="email" id="email" autocomplete="email"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="phone-number" class="block text-sm font-semibold leading-6 text-white">Phone
+                                number</label>
+                            <div class="relative mt-2.5">
+                                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message"
+                                class="block text-sm font-semibold leading-6 text-white">Message</label>
+                            <div class="mt-2.5">
+                                <textarea name="message" id="message" rows="4"
+                                    class="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <button type="submit"
+                            class="block w-full rounded-md bg-custom-green px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's
+                            talk</button>
+                    </div>
+                </form>
+            </div>
+            <div id="placeholder_div" class="animation">
+                <!-- <img src="images/Logo/White logo.png" alt=""> -->
+                 <div class="contact_details">
+                    <div>
+                        <div class="side">
+                            <i class=""></i>  
+                            <div>
+                                <h3>Head Office</h3>
+                            </div>
+                        </div>
+                        <div class="side">
+                            <i class="fa-solid fa-location-dot"></i>  
+                            <div>
+                                <h4>Menza Group International</h4>
+                                <p>AMR Building 3</p>
+                                <p>9 Concorde, East Road</p>
+                                <p>Bedfordview</p>
+                                <p>Johannesburg</p>
+                                <p>2007</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p>+27 10 143 0121</p>
+                    </div>
+                    <div class="side side2">
+                        <div class="side">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Contact for Tanzania</p>
+                        </div>
+                        <div class="side">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Contact for Ghana</p>
+                        </div>
+                    </div>
+                    <div class="side">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Contact for Zambia</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="logic.js"></script>
 <script src="carousel.js"></script>
+<script src="services.js"></script>
 <script src="animation.js"></script>
+<script src="popUp.js"></script>
+<script src="tailwind custom.js"></script>
 
 </html>
