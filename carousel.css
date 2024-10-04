@@ -80,9 +80,9 @@
     transition: none;
 }
 
-.item .img-box {
-    /* background-color: rgba(0, 0, 0, .25); */
-}
+ /*.item .img-box {
+    background-color: rgba(0, 0, 0, .25); 
+}*/
 
 /* .item:nth-child(1) .img-box {
     background: #a9350a;
