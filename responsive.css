@@ -1,5 +1,9 @@
 @media only screen and (max-width: 912px) {
 
+    .item .info-item p {
+        color: #000;
+    }
+
     #contact {
         min-height: 200vh;
     }
@@ -11,7 +15,7 @@
         align-items: center;
     }
 
-    .img-box img {
+    .img-box img, .img-box h2, .img-box h3 {
         display: none;
     }
 
@@ -218,7 +222,7 @@
         height: calc(100vh + env(safe-area-inset-bottom));
         overflow: hidden;
         overflow-x: scroll;
-        background: linear-gradient(to top, #000, transparent);
+        /* background: linear-gradient(to top, #000, transparent); */
     }
 
     .thumb {
