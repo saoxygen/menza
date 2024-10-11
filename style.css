@@ -612,6 +612,10 @@ nav a {
     width: 80%;
 }
 
+#bbody #back i {
+    color: #000;
+}
+
 #back {
     position: absolute;
     top: 40px;
