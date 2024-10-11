@@ -99,7 +99,8 @@ i {
 
 #contact {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
+    height: calc(100vh - 71px);
 }
 
 #contact_bg {
@@ -320,10 +321,8 @@ ul {
 
 #placeholder_div img {
     height: auto;
-    width: 20vw;
-    border-radius: 50%;
-    background-color: #0000007a;
-    padding: 30px 20px;
+    width: 2rem;
+    margin-right: 1rem;
 }
 
 #CTA {
