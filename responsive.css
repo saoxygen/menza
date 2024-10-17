@@ -5,7 +5,7 @@
     }
 
     #contact {
-        min-height: 140vh;
+        min-height: 100vh;
         justify-content: start;
     }
 
@@ -353,6 +353,8 @@
     #placeholder_div {
         padding: 10px;
         padding-bottom: 2rem;
+        justify-content: start;
+        align-items: start;
     }
 
     #placeholder_div .contact_details {
@@ -380,7 +382,7 @@
     } */
 
     #contact_content p {
-        width: 90%;
+        width: 70%;
     }
 
 }
