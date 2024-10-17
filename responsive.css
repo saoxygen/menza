@@ -5,7 +5,14 @@
     }
 
     #contact {
-        min-height: 200vh;
+        min-height: 140vh;
+        justify-content: start;
+    }
+
+    #contact p, #contact h4 {
+        text-wrap: wrap;
+        word-wrap: break-word;
+        width: 80%;
     }
 
     #contact_content {
@@ -349,7 +356,8 @@
     }
 
     #placeholder_div .contact_details {
-        min-width: 419px;
+        /* min-width: 419px; */
+        width: 95%;
         justify-content: space-around;
     }
 
