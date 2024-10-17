@@ -12,7 +12,6 @@
     #contact p, #contact h4 {
         text-wrap: wrap;
         word-wrap: break-word;
-        width: 80%;
     }
 
     #contact_content {
@@ -353,6 +352,7 @@
 
     #placeholder_div {
         padding: 10px;
+        padding-bottom: 2rem;
     }
 
     #placeholder_div .contact_details {
@@ -372,11 +372,16 @@
     }
 
     #contact_content {
-        padding: 0px 2rem;
+        padding: 0px 0rem;
+        padding-right: 20px;
     }
 
-    #contact_content div {
+    /* #contact_content div {
         width: 100%;
+    } */
+
+    #contact_content p {
+        width: 90%;
     }
 
 }
