@@ -689,3 +689,61 @@ nav a {
 #full_service .hideDivs {
     display: none;
 }
+
+footer {
+    background-color: #000;
+    padding: 1rem 1rem;
+}
+
+footer hr {
+    background-color: #000;
+    margin: 1rem 0rem;
+}
+
+footer img {
+    height: 120px;
+    width: 120px;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer h2 {
+    color: #deb16d;
+}
+
+footer i {
+    color: #000;
+    margin: 0px;
+}
+
+footer a {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+footer .footer_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+footer .footer_div h2 {
+    font-size: 18px;
+}
+
+footer .footer_div div {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
