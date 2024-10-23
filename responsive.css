@@ -386,7 +386,13 @@
     } */
 
     #contact_content p {
-        width: 70%;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    #contact_content .black_text {
+        width: 100%;
+        font-size: 14px;
     }
 
 }
